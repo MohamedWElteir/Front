@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiproject.Controller">
+   <children>
+      <Label layoutX="252.0" layoutY="14.0" text="Courses" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table_course" layoutX="15.0" layoutY="65.0" prefHeight="266.0" prefWidth="568.0">
+         <columns>
+            <TableColumn fx:id="col_name" prefWidth="83.20001029968262" text="Course_name" />
+            <TableColumn fx:id="col_id" prefWidth="74.40003204345703" resizable="false" text="Course_ID" />
+            <TableColumn fx:id="col_credit_hours" prefWidth="80.79998779296875" text="Course_CrHrs" />
+            <TableColumn fx:id="col_department" prefWidth="75.20001220703125" text="Course_dep" />
+            <TableColumn fx:id="col_semester" prefWidth="72.0" text="Course_sem" />
+            <TableColumn fx:id="col_year" prefWidth="79.20001220703125" text="Course_year" />
+            <TableColumn fx:id="col_lecturer" prefWidth="99.199951171875" text="Lecturer_name" />
+         </columns>
+      </TableView>
+      <Button fx:id="backcoursesbtn" layoutX="69.0" layoutY="352.0" mnemonicParsing="false" onAction="#switchToSceneCourse" text="Back" />
+   </children>
+</AnchorPane>

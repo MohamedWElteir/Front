@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiproject.Controller">
+   <children>
+      <Label layoutX="178.0" layoutY="34.0" text="Register new lecturer" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lecturer_name_TF" layoutX="228.0" layoutY="106.0" promptText="Lecturer name" />
+      <TextField fx:id="lecturer_id_TF" layoutX="228.0" layoutY="143.0" promptText="Lecturer ID" />
+      <TextField fx:id="lecturer_department_TF" layoutX="228.0" layoutY="184.0" promptText="Lecturer department" />
+      <TextField fx:id="lecturer_course_TF" layoutX="228.0" layoutY="225.0" promptText="Lecturer course" />
+      <Button layoutX="189.0" layoutY="351.0" mnemonicParsing="false" text="Add" />
+      <Button fx:id="clearbtnlecturer" layoutX="378.0" layoutY="351.0" mnemonicParsing="false" onAction="#ClearButtonLecturers" text="Clear" />
+      <Button layoutX="57.0" layoutY="351.0" mnemonicParsing="false" onAction="#switchToSceneLecture" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiproject.Controller">
+   <children>
+      <Label layoutX="263.0" layoutY="31.0" text="Lecturers" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <TableView layoutX="65.0" layoutY="76.0" prefHeight="246.0" prefWidth="482.0">
+         <columns>
+            <TableColumn fx:id="lecture_name" prefWidth="125.60004425048828" text="Lecturer_name" />
+            <TableColumn prefWidth="110.4000244140625" text="Lecturer_ID" />
+            <TableColumn prefWidth="131.2000732421875" text="Lecturer_department" />
+            <TableColumn minWidth="9.60003662109375" prefWidth="115.19992065429688" text="Lecturer_Course" />
+         </columns>
+      </TableView>
+      <Button fx:id="backstudentbtn" layoutX="59.0" layoutY="342.0" mnemonicParsing="false" onAction="#switchToSceneLecture" text="Back" />
+   </children>
+</AnchorPane>
